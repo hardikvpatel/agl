@@ -1,0 +1,34 @@
+﻿@using Sitecore.Mvc
+@using Sitecore.Mvc.Analytics.Extensions
+@using Sitecore.Mvc.Presentation
+@using AGL.Data
+@using System.Linq
+@using AGl.Service
+@using Sitecore.Configuration
+@using Sitecore.Diagnostics
+@{
+    var url = Settings.GetSetting("serviceUrl");
+
+    AGLRepository repo = new AGLRepository(url);
+    var data = repo.GetPeronsWithCats();
+
+    var grpd = data.GroupBy(x => x.gender);
+    var result = grpd.Select(x => new { gender = x.Key, cats = x.SelectMany(item => item.pets).Distinct().OrderBy(y => y.name).ToList() }).ToList();
+    
+}
+
+<div id="personlist" class="treeview">
+    @foreach (var gender in result)
+    {
+
+        <ul class="mainclass">
+            <li>@gender.gender</li>
+            <ul>
+                @foreach (var person in gender.cats)
+                {
+                    <li class="subclass">@person.name</li>
+                }
+            </ul>
+        </ul>
+    }
+</div>

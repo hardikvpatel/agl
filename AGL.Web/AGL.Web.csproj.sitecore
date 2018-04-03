@@ -1,0 +1,22 @@
+﻿<Project>
+  <PropertyGroup>
+    <Site Server="sitecore8" UserName="sitecore\admin" IsRemoteSitecore="False" />
+  </PropertyGroup>
+  <File Include="Sublayout\PersonListing.ascx" FileTimestamp="0" FileSize="0" ServerTimestamp="0" ServerFileSize="0">
+    <Item DatabaseName="master">{DEADBCFC-5D01-4585-9313-C13683ACC579}</Item>
+  </File>
+  <File Include="Sublayout\PersonListing.ascx.cs" FileTimestamp="0" FileSize="0" ServerTimestamp="0" ServerFileSize="0" />
+  <File Include="Sublayout\PersonListing.ascx.designer.cs" FileTimestamp="0" FileSize="0" ServerTimestamp="0" ServerFileSize="0" />
+  <File Include="Layouts\AGL\main.cshtml" FileTimestamp="0" FileSize="0" ServerTimestamp="0" ServerFileSize="0">
+    <Item DatabaseName="master">{5BA10B1D-096B-451C-9106-03F8AB3B4E55}</Item>
+  </File>
+  <File Include="/Layouts/AGL/main.cshtml" FileTimestamp="0" FileSize="0" ServerTimestamp="0" ServerFileSize="0">
+    <Item DatabaseName="master">{5BA10B1D-096B-451C-9106-03F8AB3B4E55}</Item>
+  </File>
+  <File Include="/Views/AGL/Controls/personlisting.cshtml" FileTimestamp="0" FileSize="0" ServerTimestamp="0" ServerFileSize="0">
+    <Item DatabaseName="master">{587FAD44-B28D-4C87-80E3-475238C1A350}</Item>
+  </File>
+  <File Include="Views\AGL\personlisting.cshtml" FileTimestamp="0" FileSize="0" ServerTimestamp="0" ServerFileSize="0">
+    <Item DatabaseName="master">{3E6146A1-D940-4F51-ABCC-3305CC241C47}</Item>
+  </File>
+</Project>
